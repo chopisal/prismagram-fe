@@ -14,7 +14,7 @@ export default () => {
   const [action, setAction] = useState("logIn");
   return (
     <Wrapper>
-      <Box>box</Box>
+      <Box>box22</Box>
     </Wrapper>
   );
 };
