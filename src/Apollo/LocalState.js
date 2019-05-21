@@ -1,6 +1,6 @@
 export const defaults = {
-  // isLoggedIn: Boolean(localStorage.getItem("token")) || false
-  isLoggedIn: true
+  isLoggedIn: Boolean(localStorage.getItem("token")) || false
+  // isLoggedIn: true
 };
 
 export const resolvers = {
