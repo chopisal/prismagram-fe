@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Feed from "../Routes/Feed";
 import Explore from "../Routes/Explore";
@@ -25,5 +26,9 @@ const LoggedOutRoutes = () => (
 
 const AppRouter = ({ isLoggedIn }) =>
   isLoggedIn ? <LoggedInRoutes /> : <LoggedOutRoutes />;
+
+AppRouter.propTypes = {
+  isLoggedIn: PropTypes.bool.isRequired
+};
 
 export default AppRouter;
